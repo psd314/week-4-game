@@ -7,10 +7,10 @@ var enemiesLeft;
 // create generic object and prototype if you have time
 var luke = {
 	name: "Luke Skywalker",
-	health: 1000,
-	baseAttack: 6,
-	currentAttack: 6,
-	counterAttack: 12,	
+	health: 220,
+	baseAttack: 12,
+	currentAttack: 12,
+	counterAttack: 10,	
 	imageStart: "<figure id='luke' class='card notSelected notCurrentEnemy'><figcaption class='topCap'>Luke Skywalker</figcaption><img src='assets/images/luke.png' /><figcaption class='bottomCap'>Health: ", 
 	imageEnd: "</figcaption>",
 	imageHtml: function () {
@@ -20,10 +20,10 @@ var luke = {
 
 var boba = {
 	name: "Boba Fett",
-	health: 100,
-	baseAttack: 6,
-	currentAttack: 6,
-	counterAttack: 12,
+	health: 200,
+	baseAttack: 15,
+	currentAttack: 15,
+	counterAttack: 15,
 	imageStart: "<figure id='boba' class='card notSelected notCurrentEnemy'><figcaption class='topCap'>Boba Fett</figcaption><img src='assets/images/boba.jpg' /><figcaption class='bottomCap'>Health: ", 
 	imageEnd: "</figcaption></figure>",
 	imageHtml: function () {
@@ -33,10 +33,10 @@ var boba = {
 
 var maul = {
 	name: "Darth Maul",
-	health: 100,
-	baseAttack: 6,
-	currentAttack: 6,
-	counterAttack: 12,
+	health: 160,
+	baseAttack: 20,
+	currentAttack: 20,
+	counterAttack: 30,
 	imageStart: "<figure id='maul' class='card notSelected notCurrentEnemy'><figcaption class='topCap'>Darth Maul</figcaption><img src='assets/images/darth_maul.jpg' /><figcaption class='bottomCap'>Health: ", 
 	imageEnd: "</figcaption></figure>",
 	imageHtml: function () {
@@ -46,10 +46,10 @@ var maul = {
 
 var solo = {
 	name: "Han Solo",
-	health: 100,
-	baseAttack: 6,
-	currentAttack: 6,
-	counterAttack: 12,
+	health: 160,
+	baseAttack: 15,
+	currentAttack: 15,
+	counterAttack: 25,
 	imageStart: "<figure id='solo' class='card notSelected notCurrentEnemy'><figcaption class='topCap'>Han Solo</figcaption><img src='assets/images/han_solo.jpg' /><figcaption class='bottomCap'>Health: ", 
 	imageEnd: "</figcaption></figure>",
 	imageHtml: function () {

@@ -3,6 +3,7 @@ body {
 	background-image: url('../images/star_wars_background.jpg');
 	height: 100vh;
 	color: white;
+	font-family: 'Titillium Web', 'Open Sans', sans-serif;
 }
 
 img {
@@ -10,6 +11,8 @@ img {
 	width: 100px;
 	padding: 25px;
 	background: lightgrey;
+	border-radius: 15px;
+
 }
 
 figure {
@@ -28,6 +31,14 @@ figcaption.bottomCap {
 	left: 25px;
 }
 
+button {
+	border: 3px solid white;
+	color: white;
+	background: black;
+	height: 50px;
+	width: 100px;
+	border-radius: 15px;
+}
 .wrapper {
 	width: 50%;
 	margin: auto;
@@ -112,7 +123,3 @@ figcaption.bottomCap {
 	visibility: hidden;
 }
 
-/*style buttons*/
-/*figure out numbers*/
-/*font*/
-/*border radius for images and figure*/
