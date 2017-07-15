@@ -77,6 +77,8 @@ $(document).ready(function() {
 		$('.yourCharacter').prepend(boba.imageHtml());
 		$('.yourCharacter').prepend(maul.imageHtml());
 		$('.yourCharacter').prepend(solo.imageHtml());
+		// record mp3's from YouTube for sound effects???
+		//console.log character paths to win
 
 		$('.card').on("click", function() {
 
@@ -87,6 +89,7 @@ $(document).ready(function() {
 				$('.yourCharacter').css("justify-content","center");
 				user = playerList[$(this).attr('id')];	
 				enemiesLeft = 3;
+				console.log($(this));
 			}
 			$('.notSelected').prependTo($('.remainingEnemies'));
 			$('.notSelected img').css('background','#FFFF66');
