@@ -6,6 +6,7 @@ var enemiesLeft;
 
 // create generic object and prototype if you have time
 var luke = {
+	name: "Luke Skywalker",
 	health: 1000,
 	baseAttack: 6,
 	currentAttack: 6,
@@ -18,6 +19,7 @@ var luke = {
 }
 
 var boba = {
+	name: "Boba Fett",
 	health: 100,
 	baseAttack: 6,
 	currentAttack: 6,
@@ -30,6 +32,7 @@ var boba = {
 }
 
 var maul = {
+	name: "Darth Maul",
 	health: 100,
 	baseAttack: 6,
 	currentAttack: 6,
@@ -42,6 +45,7 @@ var maul = {
 }
 
 var solo = {
+	name: "Han Solo",
 	health: 100,
 	baseAttack: 6,
 	currentAttack: 6,
@@ -95,7 +99,8 @@ $(document).ready(function() {
 				$('.fighter').css('justify-content','center');
 				$('#attack').css('visibility', 'visible');
 				$('#message').empty();
-				computer = playerList[$(e.target).parent().attr('id')];			
+				$('#test').empty().append("<h3>Enemies Remaining");
+				computer = playerList[$(e.target).parent().attr('id')];		
 		});
 
 
@@ -107,22 +112,24 @@ $(document).ready(function() {
 				computer.health -= user.currentAttack;
 				$('.currentEnemy')[0].lastChild.innerHTML = "Health: " + computer.health;	//write updated user.health to screen
 				user.currentAttack += user.baseAttack;
+				$('#message').empty().append("<h2>You dealt " + user.currentAttack + " damage to " + computer.name + ".</h2><h2>" + computer.name + " counterattacked and dealt you " + computer.counterAttack + " damage in return.</h2>")
 				// console.log('user health: ' + user.health);
 				// console.log('cpu health: ' + computer.health);
 
 				if(user.health <= 0) {
 					$('.selected img').css('background','red');
-					$('#message').append("<h1>Game over</h1>");
+					$('.currentEnemy').remove();
+					$('#message').empty().append("<h1>You were defeated by " + computer.name + ". Try again. Game over.</h1>");
 					$('#reset').css('visibility', 'visible');
 					$('#attack').css('visibility', 'hidden');
 				} else if (computer.health <= 0) {	//remove defeated enemy
 					fighterSelected = false;
 					$('.currentEnemy').remove();
 					$('#attack').css('visibility', 'hidden');
-					$('#message').append("<h3>Choose Another Enemy To Fight");
+					$('#message').empty().append("<h2>You defeated " + computer.name + " Choose another enemy to fight.</h2>");
 					enemiesLeft--;
 					if(enemiesLeft === 0) {
-						$('#message').empty().append("<h1>You win!</h1>");
+						$('#message').empty().append("<h1>You defeated all of your enemies. You Win!</h1>");
 						$('#reset').css('visibility', 'visible');
 						$('#attack').css('visibility', 'hidden');
 					}

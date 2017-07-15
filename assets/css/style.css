@@ -104,7 +104,7 @@ figcaption.bottomCap {
 }
 
 .selected img {
-	background: lightgreen;
+	background: forestgreen;
 }
 
 #reset,
@@ -112,6 +112,7 @@ figcaption.bottomCap {
 	visibility: hidden;
 }
 
-/*add directions and output*/
 /*style buttons*/
 /*figure out numbers*/
+/*font*/
+/*border radius for images and figure*/
