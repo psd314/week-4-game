@@ -64,6 +64,11 @@ var playerList = {
 	"solo" : solo
 }
 
+// setTimeout(function(){ 
+// 						hangman.newGame();
+// 						hangman.wordGenerate();
+// 						alert('Click to play again');
+// 					}, 100)}	
 
 $(document).ready(function() {
 	window.onload = function() {
@@ -88,12 +93,13 @@ $(document).ready(function() {
 			$('.notSelected figcaption').css('color', 'black');
 			$('.remainingEnemies').css('justify-content','center');
 		});	
-
+		// $('.remainingEnemies').on('click', function(e) {	// select an enemy
 		$('.remainingEnemies').on('click', function(e) {	// select an enemy
-			if(fighterSelected === false) {
+			if(fighterSelected === false && $(e.target).is('img') === true ) { //test if e.target is an image && $(e.target).is('img') === true
 				fighterSelected = true;
+				// console.log($(e.target).is('img'));
 				$(e.target).parent().removeClass('notSelected').addClass('currentEnemy').prependTo('.fighter')
-			}				
+			// }				
 				$('.currentEnemy img').css('background', '#CC0000');
 				$('.currentEnemy figcaption').css('color', 'white');
 				$('.fighter').css('justify-content','center');
@@ -101,6 +107,7 @@ $(document).ready(function() {
 				$('#message').empty();
 				$('#test').empty().append("<h3>Enemies Remaining");
 				computer = playerList[$(e.target).parent().attr('id')];		
+			}
 		});
 
 
