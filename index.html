@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Philippe Dixon's Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' type="text/css" href='assets/css/normalize.css'>
+	<link rel='stylesheet' type="text/css" href='assets/css/style.css'>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	</script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="title">
+			<h1>Star Wars Arena</h1>
+		</div>
+
+		<div class="content">
+
+			<div class="characters" >
+				<h3 id='yourChar'>Choose A Character</h3>
+				<div class="yourCharacter"></div>		
+			</div>	
+
+			<div class="arena">
+				<h3>Arena </h3>
+				<div class="fighter"></div>
+
+				<div class="attackBtn"> 
+					<button id='attack' type="button">Attack</button>
+				</div>
+				<div id='message'></div>
+				<div class='attackBtn'>
+					<button id='reset' type='button'>Reset</button>
+				</div>
+			</div>
+
+			<div class="enemies">
+				<h3 id="test">Choose An Enemy...Wisely</h3>
+				<div class="remainingEnemies"></div>		
+			</div>
+
+		</div>
+	</div>
+<script src="assets/javascript/game.js"></script>
+	
+</body>
+</html>

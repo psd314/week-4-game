@@ -1,0 +1,117 @@
+body {
+	box-sizing: border-box;
+	background-image: url('../images/star_wars_background.jpg');
+	height: 100vh;
+	color: white;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+	padding: 25px;
+	background: lightgrey;
+}
+
+figure {
+	margin: 0 auto 0;
+}
+
+figcaption.topCap {
+	position: relative;
+	top: 23px;
+	left: 25px;
+}
+
+figcaption.bottomCap {
+	position: relative;
+	bottom: 23px;
+	left: 25px;
+}
+
+.wrapper {
+	width: 50%;
+	margin: auto;
+}
+.characters h3 {
+	display: inline-block;
+}
+.attackBtn {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	display: flex;
+}
+
+.title h1 {
+	margin: auto;
+}
+
+.content {
+	display: flex;
+}
+.characters {
+	overflow: hidden;
+	display: flex;
+}
+.characters, 
+.enemies,
+.arena {
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 33%;
+}
+
+.arean {
+	justify-content: space-between;
+}
+
+.characters h3,
+.enemies h3,
+.arena h3 {
+	text-align: center;
+}
+
+.arena h1 {
+	text-align: center;
+}
+
+
+.yourCharacter,
+.remainingEnemies,
+.fighter {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.yourCharacter,
+.remainingEnemies,
+.fighter {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.card img{
+	height: auto;
+	max-width: 100%;
+}
+
+
+.notSelected img {
+	background: royalblue;
+}
+
+.selected img {
+	background: lightgreen;
+}
+
+#reset,
+#attack {
+	visibility: hidden;
+}
+
+/*add directions and output*/
+/*style buttons*/
+/*figure out numbers*/
