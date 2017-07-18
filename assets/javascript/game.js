@@ -150,7 +150,7 @@ $(document).ready(function() {
 		});
 
 		$('#reset').on('click', function() {
-			location.assign("http://psd314.github.io/week-4-game/");
+			window.location.reload();
 		});
 
 
