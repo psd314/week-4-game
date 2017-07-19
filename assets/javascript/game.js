@@ -71,7 +71,7 @@ var playerList = {
 // 					}, 100)}	
 
 $(document).ready(function() {
-	window.onload = function() {
+	// window.onload = function() {
 		//replace w/ for loop or forEach()???
 		$('.yourCharacter').prepend(luke.imageHtml());
 		$('.yourCharacter').prepend(boba.imageHtml());
@@ -150,13 +150,13 @@ $(document).ready(function() {
 		});
 
 		$('#reset').on('click', function() {
-			location.reload();
+			location.reload(true);
 		});
 
 
 
 
-	};	// window.onload()
+	// };	// window.onload()
 });	// $(document).ready()
 
 
